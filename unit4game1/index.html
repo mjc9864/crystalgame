@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <!-- Bootstrap for css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--Jumbotron -->
+        <div class="jumbotron" style="background-color: blue; color: black;">
+            <div class="container">
+                <h1 class="text-center">
+                    <strong>Crystal Collector</strong>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- target score -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Target Score
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="target-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- score -->
+            <div class="col-md-3">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Your Score
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="your-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- crystals -->
+            <div class="col-md-6">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Crystal Selection
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="images/blue.png" id="blue">
+                        <img src="images/green.png" id="green">
+                        <img src="images/red.png" id="red">
+                        <img src="images/yellow.png" id="yellow">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <!-- win count section -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Win Count
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="win-count">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- loss count section-->
+            <div class="col-md-6">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Loss Count
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="loss-count">0</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
